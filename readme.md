@@ -1,3 +1,7 @@
+# About the Project
+
+This is a University Organization Management System built with Django, designed to improve the management of various university components. 
+
 # About the Authors
 
 <img src="https://avatars.githubusercontent.com/u/179007837?s=400&u=42b2e4fbca008ec6e7a74fc4a7a817e590917918&v=4" width="200">
