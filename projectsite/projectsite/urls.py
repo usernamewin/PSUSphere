@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from studentorg.views import HomePageView, OrganizationList, OrganizationCreateView, OrganizationUpdateView, OrganizationDeleteView
+from studentorg.views import HomePageView, OrganizationList, OrganizationCreateView, OrganizationUpdateView, OrganizationDeleteView, StudentList, StudentCreateView, StudentUpdateView, StudentDeleteView
 from studentorg import views
 from django.contrib.auth import views as auth_views
 
@@ -30,4 +30,8 @@ urlpatterns = [
     re_path(r'^login/$', auth_views.LoginView.as_view(
         template_name='login.html'), name='login'),
     re_path(r'^logout/$', auth_views.LogoutView.as_view(), name='logout'),
+    path('student_list', StudentList.as_view(), name='student-list'),
+    path('student_list/add', StudentCreateView.as_view(), name='student-add'),
+    path('student_list/<pk>',StudentUpdateView.as_view(), name='student-update'),
+    path('student_list/<pk>/delete', StudentDeleteView.as_view(), name='student-delete'),
 ]
