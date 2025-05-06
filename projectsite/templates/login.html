@@ -20,12 +20,12 @@
                     <div class="col-md-4 text-center">
                         <form role="post" method="post">
                             {% csrf_token %}
-                <img class="mb-4" src="{% static 'img/profile.jpg' %}" alt="" width="72" height="72" />
+                <img class="mb-4" src="{% static 'img/user.jpg' %}" alt="" width="100" height="100" />
                             <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
                             <label for="inputEmail" class="sr-only">Username</label>
-                            <input type="text" name="username" class="form-control" placeholder="Username" required autofocus />
+                            <input type="text" name="username" class="form-control" placeholder="Username" required autofocus /><br>
                             <label for="inputPassword" class="sr-only">Password</label>
-                            <input type="password" name="password" class="form-control" placeholder="Password" required />
+                            <input type="password" name="password" class="form-control" placeholder="Password" required /><br>
 
                             {% if form.non_field_errors %}
                                 <div class="alert alert-danger" role="alert">
