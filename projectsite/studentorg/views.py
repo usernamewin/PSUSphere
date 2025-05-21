@@ -88,7 +88,7 @@ class StudentUpdateView(UpdateView):
 
 class StudentDeleteView(DeleteView):
     model = Student
-    template_name = 'student_delete.html'
+    template_name = 'student_del.html'
     success_url = reverse_lazy('student-list')
 
 class OrgMemberListView(ListView):
@@ -122,7 +122,7 @@ class OrgMemberUpdateView(UpdateView):
 
 class OrgMemberDeleteView(DeleteView):
     model = OrgMember
-    template_name = 'orgmember_delete.html'
+    template_name = 'orgmember_del.html'
     success_url = reverse_lazy('orgmember-list')
 
 class CollegeListView(ListView):
@@ -154,7 +154,7 @@ class CollegeUpdateView(UpdateView):
 
 class CollegeDeleteView(DeleteView):
     model = College
-    template_name = 'college_delete.html'
+    template_name = 'college_del.html'
     success_url = reverse_lazy('college-list')
 
 class ProgramListView(ListView):
@@ -185,7 +185,7 @@ class ProgramUpdateView(UpdateView):
 
 class ProgramDeleteView(DeleteView):
     model = Program
-    template_name = 'program_delete.html'
+    template_name = 'program_del.html'
     success_url = reverse_lazy('program-list')
 
 class ChartView(ListView):

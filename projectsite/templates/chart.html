@@ -251,7 +251,11 @@
                     datasets: data.map(item => ({
                         label: item.label,
                         data: [{ x: item.x, y: item.y, r: item.r }],
-                        backgroundColor: 'rgba(29, 122, 243, 0.5)'
+                        backgroundColor: [
+                        'rgba(29, 122, 243, 0.5)', 'rgba(243, 84, 93, 0.5)', 'rgba(253, 175, 75, 0.5)', 
+                        'rgba(71, 195, 99, 0.5)', 'rgba(92, 123, 217, 0.5)', 'rgba(255, 102, 204, 0.5)',
+                        'rgba(102, 204, 204, 0.5)', 'rgba(204, 153, 102, 0.5)'
+                      ]
                     }))
                 },
                 options: {
